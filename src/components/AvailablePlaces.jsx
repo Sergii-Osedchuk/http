@@ -30,15 +30,13 @@ export default function AvailablePlaces({ onSelectPlace }) {
         setIsFetching(false);
       }
     }
-    
+
     fetchPlaces();
   }, []);
 
   if (error) {
     return <ErrorMessage title='An error occurred' message={error.message} />
   }
-  
-
 
   return (
     <Places
